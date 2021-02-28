@@ -1,7 +1,10 @@
 import React from "react";
 import {FlatList, StyleSheet} from "react-native";
+import {DrawerActions} from "react-navigation-drawer";
 import {MEALS_DATA} from "../data/MEALS_DATA";
 import CategoryTile from "../components/CategoryTile";
+import {HeaderButtons, Item} from "react-navigation-header-buttons";
+import CustomHeaderButton from "../components/HeaderButton";
 
 const StartScreen = props => {
 
@@ -27,8 +30,17 @@ const StartScreen = props => {
   );
 }
 
-StartScreen.navigationOptions = {
-  headerTitle: 'First Screen',
+StartScreen.navigationOptions = props => {
+  return {
+    headerTitle: 'Categories',
+    headerLeft: () => {
+      return (<HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+        <Item iconName='ios-menu' title='Menu' onPress={() => {
+          props.navigation.toggleDrawer();
+        }}/>
+      </HeaderButtons>)
+    }
+  }
 }
 
 const styles = StyleSheet.create({

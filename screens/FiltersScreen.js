@@ -1,12 +1,28 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import {View, Text, StyleSheet} from "react-native";
+import {HeaderButtons, Item} from "react-navigation-header-buttons";
+import CustomHeaderButton from "../components/HeaderButton";
 
 const FiltersScreen = props => {
   return (
-    <View style={ styles.screen }>
+    <View style={styles.screen}>
       <Text> Filters Screen </Text>
     </View>
   );
+}
+
+FiltersScreen.navigationOptions = props => {
+  return {
+    headerTitle: 'Filters',
+
+    headerLeft: () => {
+      return (<HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+        <Item iconName='ios-menu' title='Menu' onPress={() => {
+          props.navigation.toggleDrawer();
+        }}/>
+      </HeaderButtons>)
+    }
+  }
 }
 
 const styles = StyleSheet.create({

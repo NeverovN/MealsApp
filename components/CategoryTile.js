@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
   },
   categoryName: {
     fontSize: 18,
+    fontFamily: 'open-sans-bold'
   }
 })
 

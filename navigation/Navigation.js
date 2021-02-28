@@ -4,24 +4,26 @@ import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createAppContainer} from "react-navigation";
+
 import StartScreen from "../screens/StartScreen";
 import FavouritesScreen from "../screens/FavouritesScreen";
 import MealsScreen from "../screens/MealsScreen";
 import RecipeScreen from "../screens/RecipeScreen";
 import FiltersScreen from "../screens/FiltersScreen";
 
+import Colors from "../templates/Colors";
+
 const defaultSettings = {
   headerTitle: 'Unnamed Screen',
-  headerTintColor: '#502172'
+  headerTintColor: Colors.mainColor,
 }
 
 const StackNavigation = createStackNavigator({
   start: {
     screen: StartScreen,
-  },
+    },
   meals: MealsScreen,
   recipe: RecipeScreen,
-  filters: FiltersScreen,
 }, {
   defaultNavigationOptions: defaultSettings
 });
@@ -46,6 +48,7 @@ const Navigation = createBottomTabNavigator({
         tabBarIcon: tabInfo => <Ionicons
           name='ios-restaurant'
           size={25}
+          color={tabInfo.tintColor}
         />
 
       }
@@ -57,18 +60,36 @@ const Navigation = createBottomTabNavigator({
         tabBarIcon: tabInfo => <Ionicons
           name='ios-star'
           size={25}
+          color={tabInfo.tintColor}
         />
       }
     },
   },
   {
     tabBarOptions: {
-      activeTintColor: '#ff7510'
+      activeTintColor: Colors.accentColor,
     }
   });
 
-  // const DrawerNavigator = createDrawerNavigator({
-  //
-  // });
+const FiltersScreenStack = createStackNavigator({
+  filter:  FiltersScreen
+})
 
-export default createAppContainer(Navigation);
+const DrawerNavigator = createDrawerNavigator({
+  Meals: {
+    screen: Navigation,
+
+  },
+  Filters: {
+    screen: FiltersScreenStack,
+  }
+}, {
+  contentOptions: {
+    activeTintColor: Colors.accentColor,
+    labelStyle: {
+      fontFamily: 'open-sans-bold'
+    }
+  }
+});
+
+export default createAppContainer(DrawerNavigator);

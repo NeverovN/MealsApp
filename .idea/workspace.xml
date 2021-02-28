@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108a4185-a7d4-4a49-ab5e-7161eb5457bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CategoryTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CategoryTile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/FiltersScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FiltersScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/RecipeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/RecipeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/StartScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/StartScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +48,9 @@
       <updated>1614524929504</updated>
       <workItem from="1614524930939" duration="509000" />
       <workItem from="1614525609789" duration="394000" />
+      <workItem from="1614526986231" duration="199000" />
+      <workItem from="1614527261858" duration="139000" />
+      <workItem from="1614527420225" duration="4440000" />
     </task>
     <servers />
   </component>
