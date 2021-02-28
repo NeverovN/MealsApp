@@ -16,6 +16,9 @@ import Colors from "../templates/Colors";
 const defaultSettings = {
   headerTitle: 'Unnamed Screen',
   headerTintColor: Colors.mainColor,
+  headerTitleStyle: {
+    fontFamily: 'open-sans-bold'
+  }
 }
 
 const StackNavigation = createStackNavigator({
@@ -68,11 +71,16 @@ const Navigation = createBottomTabNavigator({
   {
     tabBarOptions: {
       activeTintColor: Colors.accentColor,
+      labelStyle: {
+        fontFamily: 'open-sans-bold'
+      }
     }
   });
 
 const FiltersScreenStack = createStackNavigator({
   filter:  FiltersScreen
+}, {
+  defaultNavigationOptions: defaultSettings
 })
 
 const DrawerNavigator = createDrawerNavigator({

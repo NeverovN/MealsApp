@@ -5,7 +5,7 @@ import MealsList from "../components/MealsList";
 
 const FavouritesScreen = props => {
 
-  const filteredMeals = MEALS_RECIPE.filter(meal => true);
+  const filteredMeals = MEALS_RECIPE.filter(meal => meal.isFavourite);
 
 
   return <MealsList navigation={props.navigation} listData={filteredMeals}/>;

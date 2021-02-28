@@ -11,9 +11,9 @@ const MealTile = props => {
           </ImageBackground>
         </View>
         <View style={styles.additionalContentStyle}>
-          <Text>{props.item.duration}m</Text>
-          <Text>{props.item.complex.toUpperCase()}</Text>
-          <Text>{props.item.afford.toUpperCase()}</Text>
+          <Text style={styles.additionalTextStyle}>{props.item.duration}m</Text>
+          <Text style={styles.additionalTextStyle}>{props.item.complex.toUpperCase()}</Text>
+          <Text style={styles.additionalTextStyle}>{props.item.afford.toUpperCase()}</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -49,6 +49,10 @@ const styles = StyleSheet.create({
     titleTextStyle: {
       fontSize: 20,
       backgroundColor: 'rgba(226,192,163,0.5)',
+      fontFamily: 'open-sans'
+    },
+    additionalTextStyle: {
+      fontFamily: 'open-sans'
     }
   })
 ;

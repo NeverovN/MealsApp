@@ -2,6 +2,7 @@ import React from "react";
 import {View, Text, StyleSheet} from "react-native";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
 import CustomHeaderButton from "../components/HeaderButton";
+import Colors from "../templates/Colors";
 
 const FiltersScreen = props => {
   return (
@@ -17,7 +18,10 @@ FiltersScreen.navigationOptions = props => {
 
     headerLeft: () => {
       return (<HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
-        <Item iconName='ios-menu' title='Menu' onPress={() => {
+        <Item
+          iconName='ios-menu'
+          title='Menu'
+          onPress={() => {
           props.navigation.toggleDrawer();
         }}/>
       </HeaderButtons>)
