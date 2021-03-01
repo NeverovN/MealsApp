@@ -5,6 +5,7 @@ import {MEALS_DATA} from "../data/MEALS_DATA";
 import CategoryTile from "../components/CategoryTile";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
 import CustomHeaderButton from "../components/HeaderButton";
+import Colors from "../templates/Colors";
 
 const StartScreen = props => {
 
@@ -35,9 +36,14 @@ StartScreen.navigationOptions = props => {
     headerTitle: 'Categories',
     headerLeft: () => {
       return (<HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
-        <Item iconName='ios-menu' title='Menu' onPress={() => {
+        <Item
+          iconName='ios-menu'
+          title='Menu'
+          color={Colors.mainColor}
+          onPress={() => {
           props.navigation.toggleDrawer();
-        }}/>
+        }}
+        />
       </HeaderButtons>)
     }
   }

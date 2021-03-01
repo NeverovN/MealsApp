@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="108a4185-a7d4-4a49-ab5e-7161eb5457bf" name="Default Changelist" comment="some styling and drawer">
+    <list default="true" id="108a4185-a7d4-4a49-ab5e-7161eb5457bf" name="Default Changelist" comment="recipe screen added">
+      <change afterPath="$PROJECT_DIR$/components/Switcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MealTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MealTile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/FavouritesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FavouritesScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/FiltersScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FiltersScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/RecipeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/RecipeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/StartScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/StartScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1p7CpzFBmVUvYNHqIgSPAuZvFvL" />
   <component name="ProjectViewState">
@@ -47,7 +53,8 @@
       <workItem from="1614525609789" duration="394000" />
       <workItem from="1614526986231" duration="199000" />
       <workItem from="1614527261858" duration="139000" />
-      <workItem from="1614527420225" duration="6974000" />
+      <workItem from="1614527420225" duration="11442000" />
+      <workItem from="1614635692894" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="some styling and drawer">
       <created>1614531933095</created>
@@ -56,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614531933095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="recipe screen added">
+      <created>1614534502749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614534502749</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,9 +86,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some styling and drawer" />
-    <option name="LAST_COMMIT_MESSAGE" value="some styling and drawer" />
+    <MESSAGE value="recipe screen added" />
+    <option name="LAST_COMMIT_MESSAGE" value="recipe screen added" />
   </component>
 </project>
