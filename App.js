@@ -2,6 +2,16 @@ import React, {useState} from 'react';
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import Navigation from "./navigation/Navigation";
+import { createStore, combineReducers} from "redux";
+import { Provider } from 'react-redux';
+
+import mealsReducer from "./store/reducer/meals";
+
+const rootReducer = combineReducers({
+  meals: mealsReducer,
+});
+
+const store = createStore(rootReducer);
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -27,5 +37,5 @@ export default function App() {
     />
   }
 
-  return <Navigation />;
+  return <Provider store={store}><Navigation /></Provider>;
 }

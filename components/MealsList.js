@@ -1,15 +1,23 @@
 import React from 'react';
 import {FlatList, StyleSheet, View} from "react-native";
 import MealTile from "./MealTile";
+import { useSelector } from "react-redux";
 
 const MealsList = props => {
 
+  const favMeals = useSelector(state => state.meals.favMeals);
+
   const renderMealItem = itemData => {
+    console.log(itemData.item.title);
+
     return <MealTile item={itemData.item} onSelect={() => {
+      const isFav = favMeals.find(meal => meal.id === itemData.item.id);
       props.navigation.navigate({
         routeName: 'recipe',
         params: {
-          item: itemData.item
+          title: itemData.item.title,
+          id: itemData.item.id,
+          isFav: isFav
         }
       })
     }
@@ -29,6 +37,7 @@ const MealsList = props => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
+    width: '100%',
   },
 });
 

@@ -23,11 +23,14 @@ const MealTile = props => {
 const styles = StyleSheet.create({
     tileStyle: {
       flex: 1,
-      width: '100%',
+      width: '95%',
       height: 200,
       backgroundColor: '#b3b3b380',
       marginVertical: 5,
       borderRadius: 7,
+      marginHorizontal: 10,
+      overflow: 'hidden'
+
     },
     mainContentStyle: {
       height: '85%',

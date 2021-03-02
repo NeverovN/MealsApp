@@ -12,6 +12,7 @@ export default class Meal {
               isVegan,
               isVegetarian,
               isLactoseFree) {
+    this.id = id;
     this.catId = catId;
     this.title = title;
     this.afford = afford;
